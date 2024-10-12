@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Reflection</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 50%;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .art {
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #output {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #555;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Reflection on the Data Privacy and Awareness Campaign</h1>
+        <div id="output" class="styled-paragraph"></div>
+    </div>
+
+    <py-script>
+
+        # Reflection
+        reflection = """
+        What was learned from the Data Privacy and Awareness Campaign was how serious cybercrime and data privacy are in today's society, especially under the context of laws like RA 10173 and RA 10175.
+        The campaign shed much light on the salient features of RA 10173, which is popularly called the Data Privacy Act of 2012. It focused on protecting personal information in both sectors, private and public, to ward off these citizens from the alleged irresponsible gathering of data and further misusing them.
+    
+        The discussion of RA 10175 or the Cybercrime Prevention Act of 2012 also proved relevant, as several sections of this law would be put into high spotlights as types of punishable acts with their associated penalties.
+        Section 10 states what the law mandates for the enforcement of the provisions the act stipulates, and Section 6 increases the cybercrime price to be paid when their attention target are clearly entities or national crises that they take place under.
+    
+        The campaign delved into detail about punishable acts under Section 4 of RA 10175, which actually breaks down into several subsections.
+        Section 4A refers to offenses like illegal access, illegal interception, and data interference—the very cybercrimes against core personae both individual and corporate.
+        Section 4B revolves around computer-related offenses, including identity theft and computer forgery, among others, that pose alarming tendencies in this new digital landscape.
+        Meanwhile, Section 4C deals with content-related offenses, which include cybersex, child pornography, and unsolicited commercial communications, where openness in the internet has been abused.
+    
+        I found the topic about the Philippine National Police Anti-Cybercrime Group to be very informative.
+        Basically, the PNP ACG ensures that cybercrime laws are enforced and helps victims. Now that I know their role, I feel there indeed does exist a mechanism that safeguards citizens against the growing menace of cybercrimes.
+    
+        The session also discussed the modus operandi of cybercriminals and how these individuals operate, thus giving us a better understanding of the activities involved.
+        This is very important because the main victims of cybercrimes are users of the cyberweb, mainly because, as users, we are not often aware of the risks involved.
+        We discussed the fact that we are perpetrating these crimes unknowingly, either by not updating our privacy settings or practicing poor safety precautions in online activities.
+        Lack of familiarity combined with poor digital literacy makes easy victims out of us.
+    
+        One of the most interesting outcomes from the campaign is a balance between information about both the victims and perpetrators of cybercrimes.
+        That would make it possible for people to better equip themselves to prevent the actual occurrence of such cybercrimes.
+        This includes not only knowing how to keep one's own data safe but also being able to recognize warning signs of possible threats.
+    
+        In general, this campaign has helped increase my consciousness about data privacy and cybercrime.
+        It has come to realize that many cyber threats happen because we allow them.
+        Further in life, I will take more precautions and take proactive measures to protect my online presence and privacy, and I would encourage others also to do the same.
+        """
+    
+        # For line breaks
+        output_element = Element("output")
+        output_element.element.innerHTML = reflection.replace("\n\n", "<br><br>").replace("\n", "<br>")
+    </py-script>
+       
+    <div class="art"></div>
+    <pre>
+ ▄▄▄▄▄ ▄███▄   █▄▄▄▄ █▀▄▀█ ▄█ ▄███▄      ▄   ▄███▄       ▄███▄   █      ▄▀  ▄█    ▄       █▀▄▀█ ██     ▄▄▄▄▀ ▄▄▄▄▀ ▄  █ ▄███▄     ▄ ▄   
+▄▀  █   █▀   ▀  █  ▄▀ █ █ █ ██ █▀   ▀      █  █▀   ▀      █▀   ▀  █    ▄▀    ██     █      █ █ █ █ █ ▀▀▀ █ ▀▀▀ █   █   █ █▀   ▀   █   █  
+    █   ██▄▄    █▀▀▌  █ ▄ █ ██ ██▄▄    ██   █ ██▄▄        ██▄▄    █    █ ▀▄  ██ ██   █     █ ▄ █ █▄▄█    █     █   ██▀▀█ ██▄▄    █ ▄   █ 
+ ▄ █    █▄   ▄▀ █  █  █   █ ▐█ █▄   ▄▀ █ █  █ █▄   ▄▀     █▄   ▄▀ ███▄ █   █ ▐█ █ █  █     █   █ █  █   █     █    █   █ █▄   ▄▀ █  █  █ 
+  ▀     ▀███▀     █      █   ▐ ▀███▀   █  █ █ ▀███▀       ▀███▀       ▀ ███   ▐ █  █ █        █     █  ▀     ▀        █  ▀███▀    █ █ █  
+                 ▀      ▀              █   ██                                   █   ██       ▀     █                 ▀             ▀ ▀   
+        </pre>
+
+</body>
+</html>
